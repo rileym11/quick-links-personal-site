@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
-
 $main: #00239CFF;
 $secondary: #E10600FF;
 
@@ -17,6 +15,7 @@ $secondary: #E10600FF;
   background-position: center;
   background-size: cover;
   position: absolute;
+  background-attachment: fixed;
   top: 0;
   left: 0;
   width: 100%;

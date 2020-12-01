@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import { AppWithLayout } from './containers/App';
 import reportWebVitals from './helpers/reportWebVitals';
+import { PDFWithLayout } from './components/PDF';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
+import { Worker } from '@react-pdf-viewer/core';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppWithLayout />
+    <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.5.207/build/pdf.worker.min.js">
+      <AppWithLayout />
+    </Worker>
   </React.StrictMode>,
   document.getElementById('root')
 );
