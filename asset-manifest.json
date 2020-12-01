@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/quick-links-personal-site/static/css/main.83f0a533.chunk.css",
-    "main.js": "/quick-links-personal-site/static/js/main.a42890d6.chunk.js",
-    "main.js.map": "/quick-links-personal-site/static/js/main.a42890d6.chunk.js.map",
-    "runtime-main.js": "/quick-links-personal-site/static/js/runtime-main.523c1ec4.js",
-    "runtime-main.js.map": "/quick-links-personal-site/static/js/runtime-main.523c1ec4.js.map",
-    "static/js/2.0f860f49.chunk.js": "/quick-links-personal-site/static/js/2.0f860f49.chunk.js",
-    "static/js/2.0f860f49.chunk.js.map": "/quick-links-personal-site/static/js/2.0f860f49.chunk.js.map",
-    "static/js/3.699ff231.chunk.js": "/quick-links-personal-site/static/js/3.699ff231.chunk.js",
-    "static/js/3.699ff231.chunk.js.map": "/quick-links-personal-site/static/js/3.699ff231.chunk.js.map",
-    "index.html": "/quick-links-personal-site/index.html",
-    "static/css/main.83f0a533.chunk.css.map": "/quick-links-personal-site/static/css/main.83f0a533.chunk.css.map",
-    "static/js/2.0f860f49.chunk.js.LICENSE.txt": "/quick-links-personal-site/static/js/2.0f860f49.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "/quick-links-personal-site/static/media/orbitron-v16-latin-500.eb042f8d.eot"
+    "main.css": "/static/css/main.af823939.chunk.css",
+    "main.js": "/static/js/main.d85277ed.chunk.js",
+    "main.js.map": "/static/js/main.d85277ed.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a2364fb6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a2364fb6.js.map",
+    "static/js/2.0f860f49.chunk.js": "/static/js/2.0f860f49.chunk.js",
+    "static/js/2.0f860f49.chunk.js.map": "/static/js/2.0f860f49.chunk.js.map",
+    "static/js/3.699ff231.chunk.js": "/static/js/3.699ff231.chunk.js",
+    "static/js/3.699ff231.chunk.js.map": "/static/js/3.699ff231.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.af823939.chunk.css.map": "/static/css/main.af823939.chunk.css.map",
+    "static/js/2.0f860f49.chunk.js.LICENSE.txt": "/static/js/2.0f860f49.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/orbitron-v16-latin-500.eb042f8d.eot"
   },
   "entrypoints": [
-    "static/js/runtime-main.523c1ec4.js",
+    "static/js/runtime-main.a2364fb6.js",
     "static/js/2.0f860f49.chunk.js",
-    "static/css/main.83f0a533.chunk.css",
-    "static/js/main.a42890d6.chunk.js"
+    "static/css/main.af823939.chunk.css",
+    "static/js/main.d85277ed.chunk.js"
   ]
 }
