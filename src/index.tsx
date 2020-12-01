@@ -1,23 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
-import { AppWithLayout } from './containers/App';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { pdfjs } from 'react-pdf';
 import reportWebVitals from './helpers/reportWebVitals';
-import { PDFWithLayout } from './components/PDF';
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-import { Worker } from '@react-pdf-viewer/core';
+import { App } from './containers/App';
+import { PDF } from './components/PDF';
+import './index.scss';
+import { Layout } from './components/Layout';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 ReactDOM.render(
   <React.StrictMode>
-    <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.5.207/build/pdf.worker.min.js">
-      <AppWithLayout />
-    </Worker>
+      <Layout>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={App} />
+            <Route exact path="/resume" component={PDF} />
+            <Redirect from="*" to="/" />
+          </Switch>
+        </BrowserRouter>
+      </Layout>
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
