@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { pdfjs } from 'react-pdf';
 import reportWebVitals from './helpers/reportWebVitals';
 import { App } from './containers/App';
@@ -13,13 +13,13 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 ReactDOM.render(
   <React.StrictMode>
       <Layout>
-        <BrowserRouter>
+        <HashRouter>
           <Switch>
             <Route exact path="/" component={App} />
             <Route exact path="/resume" component={PDF} />
             <Redirect from="*" to="/" />
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       </Layout>
   </React.StrictMode>,
   document.getElementById('root')
