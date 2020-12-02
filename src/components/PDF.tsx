@@ -5,6 +5,8 @@ import { withLayout } from './Layout';
 import { NavItem } from './NavItem';
 import './PDF.scss';
 
+const resume = encodeURI('Riley MacDonald\'s Resume.pdf');
+
 export function PDF() {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
@@ -19,14 +21,14 @@ export function PDF() {
         <NavItem link="/" icon={<ChevronLeft />} text="Back Home" isReactLink />
         <div className="border border-white mx-4 h-5" />
         <NavItem
-          link={`${window.location.origin}/resume.pdf`}
+          link={`${window.location.origin}/${resume}`}
           icon={<Download />}
           text="Download"
         />
       </nav>
       <div className="max-w-full r-pdf pt-4 sm:px-6 overflow-scroll">
         <Document
-          file={`${process.env.PUBLIC_URL}/resume.pdf`}
+          file={`${process.env.PUBLIC_URL}/${resume}`}
           onLoadSuccess={onDocumentLoadSuccess}
         >
           <Page pageNumber={pageNumber} />
