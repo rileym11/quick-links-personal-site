@@ -1,16 +1,17 @@
-$main: #00239CFF;
-$secondary: #E10600FF;
+$main: #00239cff;
+$secondary: #e10600ff;
 
-.body, html {
+.body,
+html {
   background-color: black;
 }
 
 .wrapper {
   background: linear-gradient(
-      to bottom right,
-      rgba($main, 0.45) 0%,
-      rgba($secondary, 0.30) 100%
-    );
+    to bottom right,
+    rgba($main, 0.6) 0%,
+    rgba($secondary, 0.40) 100%
+  );
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -32,11 +33,12 @@ $secondary: #E10600FF;
     display: block;
     width: 40px;
     height: 40px;
-    background: rgba($secondary, 0.025);
+    border-radius: 2px;
+    background: rgba($secondary, 0.032);
     bottom: -160px;
 
     -webkit-animation: square 25s infinite;
-    animation: square 25s infinite;
+    animation: square 25s infinite ease-in-out;
 
     -webkit-transition-timing-function: linear;
     transition-timing-function: linear;
@@ -124,15 +126,23 @@ $secondary: #E10600FF;
   0% {
     transform: translateY(0);
   }
+  93% {
+    opacity: 1;
+  }
   100% {
     transform: translateY(-700px) rotate(600deg);
+    opacity: 0;
   }
 }
 @keyframes square {
   0% {
     transform: translateY(0);
   }
+  93% {
+    opacity: 1;
+  }
   100% {
     transform: translateY(-700px) rotate(600deg);
+    opacity: 0;
   }
 }
