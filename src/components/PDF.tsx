@@ -26,7 +26,7 @@ export function PDF() {
           text="Download"
         />
       </nav>
-      <div className="max-w-full r-pdf pt-4 sm:px-6 overflow-scroll">
+      <div className="max-w-full r-pdf pt-4 sm:px-6">
         <Document
           file={`${process.env.PUBLIC_URL}/${resume}`}
           onLoadSuccess={onDocumentLoadSuccess}
